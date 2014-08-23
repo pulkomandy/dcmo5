@@ -122,8 +122,8 @@ void Joysemul(int i, int state)
 // Joystick move /////////////////////////////////////////////////////////////
 void Joysmove(int n, int x, int y)
 {
- n <<= 2;
  int i;
+ n = n << 2;
  i = (y < 27768) ? 0 : 0x80; Joysemul(n++, i);
  i = (y > 37767) ? 0 : 0x80; Joysemul(n++, i);
  i = (x < 27768) ? 0 : 0x80; Joysemul(n++, i);
