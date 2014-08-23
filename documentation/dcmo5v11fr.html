@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <title>DCMO5 v11 : Emulateur MO5 Thomson</title>
+ <link href="dcmo5v11.css" rel="stylesheet" type="text/css">
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <meta name="description" content="DCMO5 v11 : Emulateur MO5 Thomson">
+ <meta name="author" content="Daniel Coulom">
+ <meta name="keywords" content="emulateur, emulator, thomson, mo5, sdl, gpl">
+</head>
+
+<body>
+<h1>DCMO5 v11 : Emulateur MO5 Thomson</h1>
+<p>
+DCMO5 v11 est un &eacute;mulateur de MO5 Thomson cr&eacute;&eacute; par Daniel Coulom (mail to danielcoulom at gmail point com).<br>
+Le site web de DCMO5 est <a href="http://dcmo5.free.fr">dcmo5.free.fr</a>.
+</p>
+<center><img border="0" src="../picture/mine.png" alt="mine">&nbsp;&nbsp;&nbsp;&nbsp;</center>
+<center><img border="0" src="../picture/mo5small.jpg" alt="mo5"></center>
+
+<h2>Fonctions</h2>
+<p>
+DCMO5 v11 &eacute;mule :
+</p>
+<ul>
+<li>L'unit&eacute; centrale <a href="../picture/mo5.jpg">UC50-001</a> equip&eacute;e du microprocesseur <a href="http://fr.wikipedia.org/wiki/Motorola_6809">Motorola MC6809E</a>.</li>
+<li>Le moniteur et l'interpr&eacute;teur Basic int&eacute;gr&eacute;.</li>
+<li>Le clavier, l'&eacute;cran et le crayon optique <a href="../picture/cr50-001.jpg">CR50-001</a>.</li> 
+<li>Le module d'extension "Musique et Jeu" <a href="../picture/sx90-018.jpg">SX90-018</a>, avec deux <a href="../picture/manette.jpg">manettes</a>.</li>
+<li>Le lecteur/enregistreur de programmes <a href="../picture/mk50-050.jpg">MK50-050</a> (LEP).</li>
+<li>Le lecteur de disquette 5"1/4 <a href="../picture/dd90-320.jpg">DD90-320</a> et son contr&ocirc;leur <a href="../picture/cd90-640.jpg">CD90-640</a>.</li>
+<li>Les cartouches MEMO5 et l'<a href="../picture/memoire.jpg">extension m&eacute;moire</a> 64 Ko.</li>
+<li>L'imprimante parall&egrave;le (dans un fichier).</li>
+</ul>
+<p>
+DCMO5 v11 n'&eacute;mule pas :
+</p>
+<ul>
+<li>Le nanor&eacute;seau L&eacute;anord.</li>
+<li>Le Quick Disk Drive <a href="../picture/qd90-128.jpg">QD90-128</a></li>
+<li>Les autres extensions : IN57-001, DI90-011, etc.</li>
+</ul>
+<p>
+L'interface utilisateur est bilingue : anglais et francais.
+</p>
+<br>
+
+<h2>Informations techniques</h2>
+<p>
+DCMO5 est un logiciel libre.
+<center><img border="0" src="../picture/sdl_powered.png" alt="sdl_powered"></center> 
+</p>
+<ul>
+<li>Il est distribu&eacute; sous licence GPL <a href="../licence/dcmo5v11-licence.txt">(voir la licence officielle)</a></li>
+<li>Il est programm&eacute; en <a href="http://en.wikipedia.org/wiki/C_programming_language">langage C</a></li>
+<li>Il utilise la biblioth&egrave;que <a href="http://www.libsdl.org/">SDL</a> pour la video et l'audio.</li>
+<li>Il utilise la biblioth&egrave;que <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a> avec la police <a href="http://www.gnome.org/fonts/">Vera</a> de <a href="http://www.bitstream.com/font_rendering/products/dev_fonts/vera.html">Bitstream</a> pour l'affichage des textes.</li>
+<li>L'interface utilisateur a &eacute;t&eacute; d&eacute;velopp&eacute;e sp&eacute;cialement pour ce projet.</li>
+<li>Il n'utilise pas de fonction sp&eacute;cifique &agrave; une machine ou &agrave; un syst&egrave;me d'exploitation, pour rester portable.</li>
+<li>Il est compatible avec Windows, Linux, Mac-OS et beaucoup d'autres syst&egrave;mes.</li>
+</ul>
+<br>
+
+<h2>Installation</h2>
+<p>
+DCMO5 v11 doit fonctionner sur tous les PC &agrave; partir du Pentium II, avec une carte son, une carte video r&eacute;cente, un syst&egrave;me Windows ou Linux post&eacute;rieur &agrave; 1998. Il fonctionne aussi sur d'autres machines et d'autres syst&egrave;mes. La liste sera donn&eacute;e ici en fonction des t&eacute;moignages d'utilisateurs.
+
+<center>
+Test&eacute; dans 
+<img border="0" src="../picture/linux.png" alt="linux">
+<img border="0" src="../picture/win32.png" alt="win32">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+A tester dans :
+<img border="0" src="../picture/macos.png" alt="macos">
+<img border="0" src="../picture/macosx.png" alt="macosx">
+<img border="0" src="../picture/amigaos.png" alt="amigaos">
+<img border="0" src="../picture/beos.png" alt="beos">
+<img border="0" src="../picture/freebsd.png" alt="freebsd">
+<img border="0" src="../picture/irix.png" alt="irix">
+<img border="0" src="../picture/netbsd.png" alt="netbsd">
+<img border="0" src="../picture/openbsd.png" alt="openbsd">
+<img border="0" src="../picture/qnx.png" alt="qnx">
+<img border="0" src="../picture/solaris.png" alt="solaris">
+etc.
+</center>
+
+</p>
+<h3>Tous syst&egrave;mes</h3>
+<br>
+<ul>
+<li>Cr&eacute;ez un nouveau dossier et nommez-le dcmo5 (ou tout autre nom &agrave; votre convenance).</li>
+<li>Dans ce dossier chargez l'archive <a href="http://dcmo5.free.fr/v11/download/dcmo5v11.0.zip">dcmo5v11.0.zip</a> ou <a href="http://dcmo5.free.fr/v11/download/dcmo5v11.0.tar.gz">dcmo5v11.0.tar.gz</a></li>
+<li>D&eacute;compactez l'archive en conservant la structure des répertoires.</li>
+<li>Installez les biblioth&egrave;ques <a href="http://www.libsdl.org/">SDL</a> et <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a></li>
+<li>Compilez DCMO5 en fonction de votre syst&egrave;me d'exploitation (dans Windows ce n'est pas n&eacute;cessaire).</li>
+<li>Le sous-dossier /software contient les images de cassettes MO5 (extension .k7), de disquettes (extension .fd) et de cartouches MEMO5 (extension .rom). Vous pouvez le compl&eacute;ter avec vos propres fichiers (voir aussi la collection de <a href="http://dcmoto.free.fr/programmes/title.html">dcmoto</a>).</li> 
+</ul>
+<h3><img border="0" src="../picture/win32.png" alt="win32"> Windows</h3>
+<p>
+Le fichier ex&eacute;cutable dcmo5.exe est fourni. Il n'est donc pas nécessaire de compiler. Un double clic sur le nom du fichier suffit pour ex&eacute;cuter dcmo5. Il est aussi possible de cr&eacute;er un raccourci et de le placer sur le bureau ou dans la barre des tâches. Rappel : les biblioth&egrave;ques SDL et SDL_ttf doivent &ecirc;tre install&eacute;es. Les fichiers SDL.dll et SDL_ttf.dll peuvent &ecirc;tre dans le dossier dcmo5, ou dans tout autre dossier accessible pour leur ex&eacute;cution, par exemple c:/windows/system32. 
+</p>
+<h3><img border="0" src="../picture/linux.png" alt="linux"> Linux</h3>
+<p>
+Apr&egrave;s avoir install&eacute; les biblioth&egrave;ques SDL et SDL_ttf, compilez dcmo5 avec le makefile fourni. Pour cel&agrave; ouvrez un terminal dans le dossier dcmo5 et ex&eacute;cutez la commande make.
+</p>
+<h3><img border="0" src="../picture/macos.png" alt="macos"> Mac-OS</h3>
+<p>
+A completer...
+</p>
+<br>
+
+<h2>Utilisation</h2>
+<p>
+Utilisez la fonction ad&eacute;quate de votre syst&egrave;me pour lancer le programme. Dans Windows, par exemple, vous pouvez double-cliquer sur le nom du programme dcmo5.exe, ou créer un raccourci sur le bureau.
+</p>
+
+<h3>Commandes de l'&eacute;mulateur</h3>
+<p>
+Toutes les commandes de l'&eacute;mulateur sont effectu&eacute;es &agrave; partir de la barre de menu situ&eacute;e en haut de la fen&ecirc;tre principale.<br>
+<br><center><img border="0" src="../picture/statutbar.png" alt="statusbar"></center> 
+</p>
+
+<ul>
+<br><li><b>A propos de DCMO5</b><br>
+Cliquez sur le bouton [?] &agrave; droite de la barre de menu.<br>
+<br><center><img border="0" src="../picture/apropos.png" alt="a propos"></center>
+</li>
+
+<br><li><b>Param&egrave;tres</b><br>
+Cliquez sur le bouton [Options] &agrave; droite de la barre de menu, et s&eacute;lectionnez la ligne Param&egrave;tres...<br> 
+Les boutons &agrave; droite de chaque ligne permettent de s&eacute;lectionner la valeur d&eacute;sir&eacute;e.<br>
+Le boutons [R&eacute;tablir les valeurs par d&eacute;faut] r&eacute;initialise toutes les valeurs.<br>
+Notez que la vitesse d'affichage a un impact important sur les ressources utilis&eacute;es. Avec une machine lente, si le rendu audio est mauvais, il faut diminuer la vitesse d'affichage jusqu'&agrave; obtenir un son correct.<br>
+<br><center><img border="0" src="../picture/parametres.png" alt="parametres"></center>
+</li>
+
+<br><li><b>Configuration du clavier</b><br>
+Cliquez sur le bouton [Options] &agrave; droite de la barre de menu, et s&eacute;lectionnez la ligne Clavier...<br> 
+Les codes des touches dépendent du type de clavier et du système d'exploitation.
+Il est impossible de prévoir toutes les configurations. Par d&eacute;faut dcmo5 utilise un clavier standard francais dans Windows XP ou Linux. Pour les autres configurations il faut red&eacute;finir la disposition. Le principe est simple : à chaque touche physique du MO5 correspond une touche physique de la machine utilisée. Mode opératoire : tapez une touche sur votre clavier. La touche correspondante du MO5 est affich&eacute;e. Si elle n'est pas correcte, cliquez sur l'image de la touche MO5 souhait&eacute;e. R&eacute;p&eacute;tez l'op&eacute;ration pour les 58 touches du MO5. Ensuite vous pouvez sauver votre disposition personnalis&eacute;e, elle sera ainsi utilis&eacute;e au prochain lancement de DCMO5.<br>
+<br><center><img border="0" src="../picture/clavier.png" alt="clavier"></center>
+</li>
+
+<br><li><b>Configuration des manettes</b><br>
+Cliquez sur le bouton [Options] &agrave; droite de la barre de menu, et s&eacute;lectionnez la ligne Manettes...<br> 
+Les manettes sont émulées par le clavier (utilisez de pr&eacute;f&eacute;rence le pav&eacute; num&eacute;rique). Pour chacune des deux manettes il faut définir quatre touches de direction et une touche d'action. Le principe est exactement le même que pour le clavier. Notez que la même touche peut être utilisée à la fois pour émuler les manettes et le clavier. A vous de faire les choix judicieux pour ne pas perturber le fonctionnement du programme exécuté lors de l'utilisation des manettes.<br>
+<br><center><img border="0" src="../picture/manettes.png" alt="manettes"></center>
+</li>
+
+<br><li><b>Chargement de cassette, disquette ou cartouche MEMO5</b><br>
+Cliquez sur le bouton [k7], ou [fd], ou [memo] de la barre de menu...<br> 
+Avec le bouton [k7], la liste des images de cassettes (fichiers .k7 dans le sous/dossier software) est affich&eacute;e dans un menu, sur lequel vous pouvez cliquer pour charger une cassette. Vous pouvez aussi cliquer sur la ligne [d&eacute;charger] pour enlever la cassette présente dans le lecteur, et sur [suite...] ou [retour au d&eacute;but...] si ces lignes sont affich&eacute;es. Le m&ecirc;me principe est applicable au bouton [fd] pour les images de disquettes (fichiers .fd du sous-dossier software), et au bouton [memo] pour les images de MEMO5 (fichiers .rom du sous-dossier software). N'oubliez pas de v&eacute;rifier dans les param&egrave;tres l'&eacute;tat de la protection en &eacute;criture de la cassette et de la disquette. Pour avoir une cassette ou une disquette vierge, créez un fichier vide dans le sous-dossier software et donnez-lui l'extension convenable (.k7 ou .fd). Notez qu'une disquette vierge ne peut pas &ecirc;tre utilis&eacute;e avant d'avoir &eacute;t&eacute; format&eacute;e avec la commande DSKINI du Basic DOS.<br>
+<br><center><img border="0" src="../picture/logiciel.png" alt="logiciel"></center>
+</li>
+
+</ul>
+
+<h3>Commandes du MO5</h3>
+<p>
+Consultez le Guide du MO5, &agrave; la page Documentation du site <a href="http://dcmoto.free.fr">dcmoto</a>
+<center><img border="0" src="../picture/guidemo5v2.jpg" alt="guide mo5"></center>
+</p>
+<h3>Commandes des logiciels</h3>
+<p>
+T&eacute;l&eacute;chargez la documentation sp&eacute;cifique, &agrave; la page Programmes du site <a href="http://dcmoto.free.fr">dcmoto</a>
+</p>
+<br>
+</body>
+</html>

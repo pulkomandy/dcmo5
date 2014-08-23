@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <title>DCMO5 v11 : Thomson MO5 emulator</title>
+ <link href="dcmo5v11.css" rel="stylesheet" type="text/css">
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+ <meta name="description" content="DCMO5 v11 : Thomson MO5 emulator">
+ <meta name="author" content="Daniel Coulom">
+ <meta name="keywords" content="emulateur, emulator, thomson, mo5, sdl, gpl">
+</head>
+
+<body>
+<h1>DCMO5 v11 : Thomson MO5 emulator</h1>
+<p>
+DCMO5 v11 is a Thomson MO5 emulator, created by Daniel Coulom (mail to danielcoulom at gmail dot com).<br>
+DCMO5 website is <a href="http://dcmo5.free.fr">dcmo5.free.fr</a>.
+</p>
+<center><img border="0" src="../picture/mine.png" alt="mine">&nbsp;&nbsp;&nbsp;&nbsp;</center>
+<center><img border="0" src="../picture/mo5small.jpg" alt="mo5"></center>
+
+<h2>Functions</h2>
+<p>
+DCMO5 v11 emulates :
+</p>
+<ul>
+<li><a href="../picture/mo5.jpg">UC50-001</a> CPU with the <a href="http://fr.wikipedia.org/wiki/Motorola_6809">Motorola MC6809E</a> microprocessor.</li>
+<li>System monitor and built-in Basic interpreter.</li>
+<li>Keyboard, display and <a href="../picture/cr50-001.jpg">CR50-001</a> lightpen.</li> 
+<li><a href="../picture/sx90-018.jpg">SX90-018</a> 'Music and Game' expansion module, with two <a href="../picture/manette.jpg">joysticks</a>.</li>
+<li><a href="../picture/mk50-050.jpg">MK50-050</a> tape unit (LEP).</li>
+<li><a href="../picture/dd90-320.jpg">DD90-320</a> 5"1/4 floppy disk drive with <a href="../picture/cd90-640.jpg">CD90-640</a> controller.</li>
+<li>MEMO5 rom cartridges and 64 KB <a href="../picture/memoire.jpg">ram expansion</a> cartridge.</li>
+<li>Parallel printer (with a file).</li>
+</ul>
+<p>
+DCMO5 does not emulates :
+</p>
+<ul>
+<li>Leanord nanoreseau (network).</li>
+<li><a href="../picture/qd90-128.jpg">QD90-128</a> Quick Disk Drive.</li>
+<li>Other expansion modules : IN57-001, DI90-011, etc.</li>
+</ul>
+<p>
+DCMO5 user interface comes with two languages : English and French.
+</p>
+<br>
+
+
+<h2>Technical tips</h2>
+<p>
+DCMO5 is a 'free software'.
+<center><img border="0" src="../picture/sdl_powered.png" alt="sdl_powered"></center> 
+</p>
+<ul>
+<li>It is distributed under the terms of the GNU GPL <a href="../licence/dcmo5v11-licence.txt">(more in the official licence)</a></li>
+<li>It is programmed with the <a href="http://en.wikipedia.org/wiki/C_programming_language">C language</a></li>
+<li>It uses <a href="http://www.libsdl.org/">SDL</a> library for audio and video.</li>
+<li>It uses <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a> library with <a href="http://www.bitstream.com/font_rendering/products/dev_fonts/vera.html">Bitstream</a> <a href="http://www.gnome.org/fonts/">Vera</a> font.</li>
+<li>User interface has been designed specially for this project.</li>
+<li>It doesn't use hardware specific or system specific function, to allow easy port.</li>
+<li>It can run with Windows, Linux, Mac-OS and many other systems.</li>
+</ul>
+<br>
+
+<h2>Installation</h2>
+<p>
+DCMO5 should run on every PC with a Pentium II or better processor, with an audio adapter, a decent video adapter, running Windows or Linux 1998 or newer release. It also runs on other platforms. The list of compatible systems will be added here, depending on the users feedback.
+
+<center>
+Tested with :
+<img border="0" src="../picture/linux.png" alt="linux">
+<img border="0" src="../picture/win32.png" alt="win32">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+To be tested with :
+<img border="0" src="../picture/macos.png" alt="macos">
+<img border="0" src="../picture/macosx.png" alt="macosx">
+<img border="0" src="../picture/amigaos.png" alt="amigaos">
+<img border="0" src="../picture/beos.png" alt="beos">
+<img border="0" src="../picture/freebsd.png" alt="freebsd">
+<img border="0" src="../picture/irix.png" alt="irix">
+<img border="0" src="../picture/netbsd.png" alt="netbsd">
+<img border="0" src="../picture/openbsd.png" alt="openbsd">
+<img border="0" src="../picture/qnx.png" alt="qnx">
+<img border="0" src="../picture/solaris.png" alt="solaris">
+and more...
+</center>
+
+</p>
+<h3>All platforms</h3>
+<br>
+<ul>
+<li>Create a new folder and name it dcmo5 (or any other name you like).</li>
+<li>Download <a href="http://dcmo5.free.fr/v11/download/dcmo5v11.0.zip">dcmo5v11.0.zip</a> or <a href="http://dcmo5.free.fr/v11/download/dcmo5v11.0.tar.gz">dcmo5v11.0.tar.gz</a> to this folder.</li>
+<li>Unpack the archive, keeping the directory structure.</li>
+<li>Install <a href="http://www.libsdl.org/">SDL</a> and <a href="http://www.libsdl.org/projects/SDL_ttf/">SDL_ttf</a> libraries.</li>
+<li>Compile DCMO5, depending on your operating system (not required with Windows).</li>
+<li>/software subfolder contains MO5 tape images (.k7 extension), disk images (.fd extension) and MEMO5 cartridge images (.rom extension). You can add your own files (look also at <a href="http://dcmoto.free.fr/programmes/title.html">dcmoto</a> collection).</li> 
+</ul>
+<h3><img border="0" src="../picture/win32.png" alt="win32"> Windows</h3>
+<p>
+Dcmo5.exe executable file comes with dcmo5. It doesn't need to be compiled. Just double-click the dcmo5.exe filename to run dcmo5. A shortcut may be added to the Desktop or to the Task Bar. Please note : SDL and SDL_ttf libraries must be installed. SDL.dll and SDL_ttf.dll files may be stored in dcmo5 folder, or in any other folder searched for executable programs, ie c:/windows/system32. 
+</p>
+<h3><img border="0" src="../picture/linux.png" alt="linux"> Linux</h3>
+<p>
+After SDL and SDL_ttf library installation, compile dcmo5 with the makefile coming with the distribution. Open a terminal in dcmo5 folder and execute a 'make' command.
+</p>
+<h3><img border="0" src="../picture/macos.png" alt="macos"> Mac-OS</h3>
+<p>
+To be continued...
+</p>
+<br>
+
+<h2>User Guide</h2>
+<p>
+Start dcmo5 with the suitable command, depending on your operating system. With Windows, for instance, you can double-click dcmo5.exe filename or use a shortcut.
+</p>
+
+<h3>Emulator commands</h3>
+<p>
+All emulator commands are done through menu bar at the top of the program main window.<br>
+<br><center><img border="0" src="../picture/statusbar.png" alt="statusbar"></center> 
+</p>
+
+<ul>
+<br><li><b>About DCMO5</b><br>
+Click [?] button on the right of the menu bar.<br>
+<br><center><img border="0" src="../picture/about.png" alt="about"></center>
+</li>
+
+<br><li><b>Settings</b><br>
+Click [Options] button on the right of the menu bar, and select Settings...<br> 
+The buttons on the right of each parameter can be used to change the value.<br>
+[Restore default values] button initializes all the values.<br>
+Increasing display speed and processor speed dramatically increases resource usage. With a slow computer, when audio output is poor, you need to decrease display speed until you get good sound.<br>
+<br><center><img border="0" src="../picture/settings.png" alt="settings"></center>
+</li>
+
+<br><li><b>Keyboard layout</b><br>
+Click [Options] button on the right of the menu bar, and select Keyboard...<br> 
+Key codes depend on operating system and keyboard type.
+It is not possible recognize every configuration. Default in dcmo5 is a standard French keyboard with Windows XP or Linux. For other configurations the keyboard layout must be redefined. It is a straightforward process : each MO5 key is emulated with one key of the actual keyboard. Type a key on the keyboard. Matching MO5 key is shown. If not correct, click the corresponding MO5 key picture. Repeat this process for each of the 58 MO5 keys. Then you should save the customized keyboard layout, and it will be used each time you will run DCMO5.<br>
+<br><center><img border="0" src="../picture/keyboard.png" alt="keyboard"></center>
+</li>
+
+<br><li><b>Joystick emulation</b><br>
+Click [Options] button on the right of the menu bar, and select Joysticks...<br> 
+Joysticks are emulated with the keyboard (use preferably the numeric keypad). For each joystick, four keys have to be choosen for directions and one for fire. Process is exactly the same as for keyboard layout. Please note that the same key can be used for both MO5 keyboard and MO5 joystick emulation. Make your choice to avoid mix-up when running a program testing both keyboard and joysticks.<br>
+<br><center><img border="0" src="../picture/joysticks.png" alt="joysticks"></center>
+</li>
+
+<br><li><b>Load tape, disk or MEMO5 cartridge</b><br>
+Click [k7], or [fd], or [memo] button of the menu bar...<br> 
+Using [k7] button, tape images (.k7 files in software subfolder) are listed in a clickable menu. Click the file name to load the tape. You can also click [unload] to unload the tape, and [next...] or [back to the beginning] if these lines are displayed. Same usage for [fd] buton with disk images (.fd files in software subfolder), and for [memo] button with MEMO5 images (.rom files in software subfolder). Don't forget to check settings for tape and disk write protection. To make an empty tape or disk, create an empty file in software subfolder, and name it with .k7 or .fd extension. Please not that you cannot use a new disk before formating it with DOS Basic DSKINI command.<br>
+<br><center><img border="0" src="../picture/software.png" alt="software"></center>
+</li>
+
+</ul>
+
+<h3>MO5 commands</h3>
+<p>
+Look at 'Guide du MO5' (in French), at <a href="http://dcmoto.free.fr">dcmoto</a> Documentation page.<br>
+<center><img border="0" src="../picture/guidemo5v2.jpg" alt="guide mo5"></center>
+</p>
+<h3>MO5 game and program commands</h3>
+<p>
+Download user guides at <a href="http://dcmoto.free.fr">dcmoto</a> Programmes page.
+</p>
+<br>
+</body>
+</html>

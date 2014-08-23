@@ -1,0 +1,139 @@
+ (voir traduction française à la suite de la version anglaise)
+
+                       DCMO5 v11 LICENSE
+                  Version 1 - 4 December 2007
+
+ Copyright (C) 2007 Daniel Coulom - danielcoulom@gmail.com
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+
+ 1) DCMO5 v11
+ ------------
+
+ DCMO5 v11 is free software : you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ DCMO5 v11 is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with DCMO5 v11. If not, see http://www.gnu.org/licenses/
+ DCMO5 v11 source is available from http://dcmo5.free.fr/ 
+
+
+
+ 2) SDL & SDL_ttf libraries
+ --------------------------
+
+ DCMO5 v11 uses Simple DirectMedia Layer (SDL) and SDL_ttf libraries.
+ The Simple DirectMedia Layer library and the SDL_ttf library are
+ currently available under the GNU Lesser General Public License
+ (LGPL) version 2.1 or newer. http://www.gnu.org/copyleft/lesser.html
+ The source is available from the libraries page at the SDL website:
+ http://www.libsdl.org/ 
+
+
+
+ 3) Vera true type font
+ ----------------------
+
+ DCMO5 v11 uses Bitstream Vera Fonts : http://www.gnome.org/fonts/
+ Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+ Bitstream Vera is a trademark of Bitstream, Inc. 
+ Please read vera-copyright.txt for details.
+
+
+
+ 4) MO5 and CD90-640 ROM
+ ----------------------- 
+
+ Thomson MO5 ROM and CD90-640 ROM are copyrighted materials.
+ If you intend to use them, you must locate the copyright owners
+ and ask them a written permission.
+
+
+
+ 5) MO5 software
+ --------------- 
+
+ Most MO5 commercial programs are copyrighted materials.
+ If you intend to use them, you must locate the author and the
+ publisher and ask them a written permission.
+
+
+____________________________________________________________________________
+                  (official French translation)
+
+                      LICENCE de DCMO5 v11
+                   Version 1 - 4 Decembre 2007
+
+ Copyright (C) 2007 Daniel Coulom - danielcoulom@gmail.com
+ Chacun est autorise a copier et distribuer des copies conformes de
+ ce document de licence, mais toute modification en est proscrite.
+
+
+
+ 1) DCMO5 v11
+ ------------
+
+ DCMO5 v11 est un logiciel libre ; vous pouvez le redistribuer ou
+ le modifier suivant les termes de la “GNU General Public License”
+ telle que publiee par la Free Software Foundation : soit la version
+ 3 de cette licence, soit (a votre gre) toute version ulterieure.
+  
+ DCMO5 v11 est distribue dans l’espoir qu’il vous sera utile, mais
+ SANS AUCUNE GARANTIE : sans meme la garantie implicite de
+ COMMERCIALISABILITE ni d’ADEQUATION À UN OBJECTIF PARTICULIER.
+ Consultez la Licence Generale Publique GNU pour plus de details.
+  
+ Vous devriez avoir reçu une copie de la Licence Generale Publique
+ GNU avec DCMO5 v11. Si ce n’est pas le cas, consultez
+ http://www.gnu.org/licenses/
+ Les sources de DCMO5 v11 sont disponibles a http://dcmo5.free.fr/ 
+
+
+
+ 2) Bibliotheques SDL & SDL_ttf
+ ------------------------------
+
+ DCMO5 v11 utilise les bibliotheques Simple DirectMedia Layer (SDL)
+ et SDL_ttf. Ces bibliotheques sont actuellement disponibles suivant
+ les termes de la "GNU Lesser General Public License" (LGPL) :
+ soit la version 2.1, soit (a votre gre) toute version ulterieure.
+ http://www.gnu.org/copyleft/lesser.html
+ Les sources sont disponibles a http://www.libsdl.org/ 
+
+
+
+ 3) Police Vera true type
+ ------------------------
+
+ DCMO5 v11 utilise la police de caracteres Vera de Bitstream :
+ http://www.gnome.org/fonts/
+ Copyright (c) 2003 Bitstream, Inc. Tous droits reserves.
+ Bitstream Vera est une marque commerciale de Bitstream, Inc. 
+ Pour plus de details lire le fichier vera-copyright.txt
+
+
+
+ 4) ROM MO5 et CD90-640
+ ---------------------- 
+
+ La ROM du MO5 Thomson et celle du controleur CD90-640 sont protegees
+ par un copyright. Si vous voulez les utiliser, vous devez identifier
+ les proprietaires du copyright et obtenir leur accord par ecrit.
+
+
+
+ 5) Logiciel MO5
+ --------------- 
+
+ La plupart des programmes MO5 commerciaux sont proteges par copyright.
+ Si vous voulez les utiliser, vous devez identifier les proprietaires
+ du copyright et obtenir leur accord par ecrit.
