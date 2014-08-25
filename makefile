@@ -5,7 +5,7 @@ objects = object/dcmo5main.o object/dc6809emul.o object/dcmo5boutons.o \
 	object/dcmo5keyb.o object/dcmo5options.o object/dcmo5video.o
 
 dcmo5 : $(objects)
-	cc -o dcmo5 -lSDL -lSDL_ttf $(objects)
+	cc -o dcmo5 $(shell sdl-config --libs) -lSDL_ttf $(objects)
 
 object/dcmo5main.o : source/dcmo5main.c source/dcmo5msg.h include/policettf.h include/dcmo5icon.h
 	cc -c source/dcmo5main.c -o object/dcmo5main.o -O2
