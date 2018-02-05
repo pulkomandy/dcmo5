@@ -41,4 +41,4 @@ object :
 	mkdir -p object
 
 clean :
-	rm -f dcmo5 $(objects)
+	rm -fr dcmo5 object $(objects)
