@@ -1,13 +1,14 @@
 # Project: dcmo5
 
-CFLAGS = -O2 $(shell sdl-config --cflags)
+CFLAGS = -O2 $(shell sdl-config --cflags) $(shell pkg-config --cflags SDL_ttf)
+LDFLAGS = $(shell sdl-config --cflags) $(shell pkg-config --libs SDL_ttf)
 
 objects = object/dcmo5main.o object/dc6809emul.o object/dcmo5boutons.o \
 	object/dcmo5dialog.o object/dcmo5devices.o object/dcmo5emulation.o \
 	object/dcmo5keyb.o object/dcmo5options.o object/dcmo5video.o
 
 dcmo5 : $(objects)
-	cc -o dcmo5 $(shell sdl-config --libs) -lSDL_ttf $(objects)
+	cc $(objects) $(LDFLAGS) -o dcmo5
 
 object/dcmo5main.o : source/dcmo5main.c source/dcmo5msg.h include/policettf.h include/dcmo5icon.h object
 	cc -c source/dcmo5main.c -o object/dcmo5main.o $(CFLAGS)
@@ -40,4 +41,4 @@ object :
 	mkdir -p object
 
 clean :
-	rm dcmo5 $(objects)
+	rm -f dcmo5 $(objects)
