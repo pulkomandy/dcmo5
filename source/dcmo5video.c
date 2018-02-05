@@ -21,7 +21,7 @@
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-#include <SDL/SDL.h>
+#include <SDL.h>
 #include <string.h>
 
 #define VIDEO_MODE SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_RESIZABLE
