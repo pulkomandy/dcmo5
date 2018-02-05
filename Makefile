@@ -1,7 +1,7 @@
 # Project: dcmo5
 
 CFLAGS = -O2 $(shell sdl-config --cflags) $(shell pkg-config --cflags SDL_ttf)
-LDFLAGS = $(shell sdl-config --cflags) $(shell pkg-config --libs SDL_ttf)
+LDFLAGS = $(shell sdl-config --libs) $(shell pkg-config --libs SDL_ttf)
 
 objects = object/dcmo5main.o object/dc6809emul.o object/dcmo5boutons.o \
 	object/dcmo5dialog.o object/dcmo5devices.o object/dcmo5emulation.o \
