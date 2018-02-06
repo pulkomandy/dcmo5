@@ -21,8 +21,8 @@
 //
 //////////////////////////////////////////////////////////////////////////////
 
-#include <SDL/SDL.h>
-#include <SDL/SDL_ttf.h> 
+#include <SDL.h>
+#include <SDL_ttf.h> 
 #include <stdio.h>
 #include <string.h>
 #include "dcmo5global.h"
