@@ -431,6 +431,10 @@ void Keydown(int keysym, int scancode)
  extern void Initprog();
  extern void exit(int n);
  extern void Joysemul(int i, int state);
+ #ifdef DEBUG_SCANCODE
+   // to devise keyboard mapping
+   printf("scan: %#04x - symb: %#04x \n", scancode, keysym) ;
+ #endif
  //le scancode seul ne permet pas de distinguer le pave numerique
  //keycode = scancode + 0x40 pour le pave numerique
  //keycode = scancode pour toutes les autres touches

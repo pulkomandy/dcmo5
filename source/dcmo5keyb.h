@@ -105,6 +105,105 @@ button joystickbutton[JOYSTICKBUTTON_MAX] = {
 {"[sauver]", 228, 209, 0, 0, 68}  //0x01 
 };
 
+#ifdef USE_TYPEMATRIX_BEPO_LAYOUT
+// Because it is too cumbersome to craft a binary config file
+// see bepo layout at http://bepo.fr/wiki/TypeMatrix
+//
+// --- special keys mapping ---
+// RAZ   : Escape
+// STOP  : F10
+// BASIC : F12
+// EFF   : Backspace
+// INS   : Suppr
+// DEBUT : Home
+// ACC   : End
+// CNT   : Page down
+//
+// --- other unobvious mapping ---
+// '/'   : e acute
+// '*'   : e grave
+// '@'   : a grave
+//
+int pckeycode[MO5KEY_MAX]=
+{
+ 0x2f, //0x00 N
+ 0x77, //0x01 EFF
+ 0x21, //0x02 J
+ 0x3c, //0x03 H
+ 0x27, //0x04 U
+ 0x35, //0x05 Y
+ 0x10, //0x06 7 '
+ 0x0f, //0x07 6 &
+ 0x2a, //0x08 , <
+ 0x16, //0x09 INS
+ 0x38, //0x0a K
+ 0x3b, //0x0b G
+ 0x28, //0x0c I
+ 0x2c, //0x0d T
+ 0x11, //0x0e 8 (
+ 0x0e, //0x0f 5 %
+ 0x37, //0x10 . >
+ 0x6e, //0x11 DEBUT
+ 0x20, //0x12 L
+ 0x3d, //0x13 F
+ 0x1b, //0x14 O
+ 0x2e, //0x15 R
+ 0x12, //0x16 9 )
+ 0x0d, //0x17 4 $
+ 0x34, //0x18 @ ^
+ 0x72, //0x19 DROITE
+ 0x30, //0x1a M
+ 0x1f, //0x1b D
+ 0x1a, //0x1c P
+ 0x29, //0x1d E
+ 0x13, //0x1e 0 `
+ 0x0c, //0x1f 3 #
+ 0x41, //0x20 ESPACE
+ 0x74, //0x21 BAS
+ 0x18, //0x22 B
+ 0x2d, //0x23 S
+ 0x19, //0x24 / ?
+ 0x22, //0x25 Z
+ 0x14, //0x26 - =
+ 0x0b, //0x27 2 "
+ 0x36, //0x28 X
+ 0x71, //0x29 GAUCHE
+ 0x1e, //0x2a V
+ 0x3a, //0x2b Q
+ 0x1c, //0x2c * :
+ 0x26, //0x2d A
+ 0x15, //0x2e + ;
+ 0x0a, //0x2f 1 !
+ 0x23, //0x30 W
+ 0x6f, //0x31 HAUT
+ 0x2b, //0x32 C
+ 0x09, //0x33 RAZ
+ 0x24, //0x34 ENTREE
+ 0x75, //0x35 CNT
+ 0x73, //0x36 ACC
+ 0x4c, //0x37 STOP
+ 0x32, //0x38 MAJUSCULE
+ 0x60  //0x39 BASIC
+};
+
+//scancode hardware du PC Linux pour chaque fonction des manettes MO5
+//(+ 0x40 pour les touches du pave numerique pour les distinguer des autres)
+int pcjoycode[JOYKEY_MAX]=
+{
+ 0x94, //0 manette 0 HAUT
+ 0x98, //1 manette 0 BAS
+ 0x97, //2 manette 0 GAUCHE
+ 0x99, //3 manette 0 DROITE
+ 0xb0, //4 manette 1 HAUT
+ 0x90, //5 manette 1 BAS
+ 0x8f, //6 manette 1 GAUCHE
+ 0x91, //7 manette 1 DROITE
+ 0xac, //8 manette 0 ACTION
+ 0x96  //9 manette 1 ACTION
+};
+
+#else // ifdef USE_TYPEMATRIX_BEPO_LAYOUT
+
 #ifdef WIN32
 //scancode hardware du PC Windows pour chaque touche MO5
 //(+ 0x40 pour les touches du pave numerique pour les distinguer des autres)
@@ -186,7 +285,7 @@ int pcjoycode[JOYKEY_MAX]=
  0x8e  //9 manette 1 ACTION
 };
 
-#else
+#else // ifdef WIN32
 
 //scancode hardware du PC Linux pour chaque touche MO5
 //(+ 0x40 pour les touches du pave numerique pour les distinguer des autres)
@@ -268,7 +367,9 @@ int pcjoycode[JOYKEY_MAX]=
  0x96  //9 manette 1 ACTION
 };
 
-#endif
+#endif // ifdef WIN32
+
+#endif // ifdef USE_TYPEMATRIX_BEPO_LAYOUT
 
 /*
 //essai avec les noms symbolique

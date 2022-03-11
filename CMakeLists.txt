@@ -18,6 +18,17 @@ set(SOURCES_FILE
   ${PROJECT_SOURCE_DIR}/source/dcmo5video.c
 )
 
+option(DEBUG_SCANCODE "To enable a print of the scancode on the standard output, usefull when crafting a layout." OFF)
+if(DEBUG_SCANCODE)
+  add_definitions(-DDEBUG_SCANCODE)
+endif(DEBUG_SCANCODE)
+
+option(USE_TYPEMATRIX_BEPO_LAYOUT "To enable a layout crafted for typematrix keyboard with bepo layout." OFF)
+if(USE_TYPEMATRIX_BEPO_LAYOUT)
+  add_definitions(-DUSE_TYPEMATRIX_BEPO_LAYOUT)
+endif(USE_TYPEMATRIX_BEPO_LAYOUT)
+
+
 add_executable(dcmo5 ${SOURCES_FILE})
 target_link_libraries(dcmo5 ${SDL_LIBRARY} ${SDL_TTF_LIBRARIES})
 
