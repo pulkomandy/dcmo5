@@ -1,3 +1,11 @@
+## Working dir for CMake
+build/
+
+## Temp files and folder
+tmp.*
+tmp/
+
+## Build artifacts
 # Compiled Object files
 *.slo
 *.lo
